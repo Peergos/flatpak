@@ -13,8 +13,6 @@ finish-args:
   - --socket=x11
   - --socket=wayland
 
-  - --filesystem=home
-
 modules:
   - name: peergos
     buildsystem: simple
