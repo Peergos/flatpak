@@ -1,11 +1,13 @@
 app-id: org.peergos.Peergos
-runtime: org.freedesktop.Platform
-runtime-version: "25.08"
-sdk: org.freedesktop.Sdk
-command: peergos
+runtime: org.gnome.Platform
+runtime-version: "46"
+
+sdk: org.freedesktop.Sdk//23.08
 
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk21
+
+command: peergos
 
 finish-args:
   - --share=network
@@ -27,8 +29,8 @@ modules:
 
     sources:
       - type: file
-        url: https://github.com/Peergos/web-ui/releases/download/v1.18.0/Peergos.jar
-        sha256: 2538091c2de75adf168a560ebc9c164278c44d067788af928fe89b12062f5363
+        url: http://localhost:9999/Peergos.jar
+        sha256: ec189aeb37de718981cbf88aac73394b26e51d2cb344d40be2c52abd672acc96
 
       - type: file
         path: peergos.sh
