@@ -11,8 +11,9 @@ command: peergos
 
 finish-args:
   - --share=network
+  - --share=ipc
 
-  - --socket=x11
+  - --socket=fallback-x11
   - --socket=wayland
 
 build-options:
@@ -56,7 +57,7 @@ modules:
     sources:
       - type: git
         url: http://github.com/peergos/web-ui.git
-        branch: master
+        commit: be3939b37532f21658351208313f02e860822789
 
       - type: file
         path: peergos.sh
