@@ -1,6 +1,6 @@
 app-id: org.peergos.Peergos
 runtime: org.gnome.Platform
-runtime-version: "46"
+runtime-version: "48"
 
 sdk: org.freedesktop.Sdk//23.08
 
